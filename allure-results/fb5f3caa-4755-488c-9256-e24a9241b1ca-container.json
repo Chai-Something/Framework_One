@@ -1,0 +1,1 @@
+{"uuid":"fb5f3caa-4755-488c-9256-e24a9241b1ca","name":"base.BaseTest.cloeBrowser","children":["98a57db4-383a-4375-abf7-89267e4e0a15"],"description":"","befores":[],"afters":[{"name":"cloeBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1689245494635,"stop":1689245494801}],"start":1689245494634,"stop":1689245494801}
