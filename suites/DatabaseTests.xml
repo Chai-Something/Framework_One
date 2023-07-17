@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Registration">
+    <test thread-count="5" name="Chai-Something Framework One">
+        <classes>
+            <class name="testCases.Database.DatabaseConnectTest"/>
+            <class name="testCases.Database.InsertionDataTest"/>
+            <class name="testCases.Database.DisplayDataTest"/>
+        </classes>
+    </test> <!-- Chai-Something Framework One -->
+</suite> <!-- Default Suite -->

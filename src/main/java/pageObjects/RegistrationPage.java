@@ -20,7 +20,7 @@ public class RegistrationPage {
     private final By passwordField = By.id("Password");
     private final By confirmPasswordField = By.id("ConfirmPassword");
     private final By registerButton2 = By.id("register-button");
-    private final By succesfullRegistrationTxt = By.xpath("//div[@class='result']");
+    private final By successfulRegistrationTxt = By.xpath("//div[@class='result']");
     private final By continueBtn = By.xpath("//input[@value='Continue']");
 
     @Step("Navigate to the Registration page")
@@ -80,6 +80,6 @@ public class RegistrationPage {
     }
 
     public Boolean successfulRegistration(){
-        return elements.getWebElement(succesfullRegistrationTxt).getText().contains("Your registration completed");
+        return elements.getWebElement(successfulRegistrationTxt).getText().contains("Your registration completed");
     }
 }
