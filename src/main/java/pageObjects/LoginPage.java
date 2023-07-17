@@ -3,17 +3,16 @@ package pageObjects;
 import Utilities.DriverListener;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage{
     DriverListener elements = new DriverListener();
-    private By loginEmail = By.xpath("//input[@id='Email']");
-    private By loginPassword = By.xpath("//input[@id='Password']");
-    private By loginButton = By.xpath("//div[@class='buttons']/input[@type='submit']");
-    private By headerEmailLink = By.xpath("//div[@class='header-links']//a[@class='account']");
-    private By unsuccessfulLoginTxt = By.xpath("//div[@class='validation-summary-errors']");
-    private By logoutLink = By.xpath("//a[@class='ico-logout']");
-    private By loginLink = By.xpath("//a[@class='ico-login']");
+    private final By loginEmail = By.xpath("//input[@id='Email']");
+    private final By loginPassword = By.xpath("//input[@id='Password']");
+    private final By loginButton = By.xpath("//div[@class='buttons']/input[@type='submit']");
+    private final By headerEmailLink = By.xpath("//div[@class='header-links']//a[@class='account']");
+    private final By unsuccessfulLoginTxt = By.xpath("//div[@class='validation-summary-errors']");
+    private final By logoutLink = By.xpath("//a[@class='ico-logout']");
+    private final By loginLink = By.xpath("//a[@class='ico-login']");
 
     @Step("Enter login Details with username {0} and password {1}")
     public void login(String email, String password) {

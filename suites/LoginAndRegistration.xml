@@ -5,8 +5,9 @@
     <parameter name="browserName" value="chrome"/>
 <test thread-count="5" name="Chai-Something Framework One">
     <classes>
+        <class name="testCases.Web.LoginAndRegistration.RegistrationTest"/>
         <class name="testCases.Web.LoginAndRegistration.LoginTest"/>
         <class name="testCases.Web.LoginAndRegistration.LogoutTest"/>
-    </classes>
+ </classes>
 </test> <!-- Chai-Something Framework One -->
 </suite> <!-- Default Suite -->
